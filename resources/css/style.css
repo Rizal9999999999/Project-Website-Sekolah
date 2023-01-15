@@ -1,0 +1,250 @@
+body {
+	background-image: url('../images/20220403_173108_0000.png');
+}
+.header {
+	width: 950px;
+	height: 200px;
+	border: 0px;
+	margin-bottom: 7px;
+	text-align: center;
+	background-image: url('../images/20220404_000732_0000.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	border-style: groove;
+	
+}
+
+.sd {
+	font-family: 'mulisemibold';
+	font-size: 18px;
+}
+
+.visi {
+	font-family: 'mulilight';
+	font-size: 14px;
+}
+.container {
+	width: 1140px;
+	margin:0 auto;
+}
+
+.container::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.section {
+	padding:100px 0;
+}
+
+.section h3 {
+	padding-bottom: 25px;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.section h3::after {
+	content: "";
+	display: block;
+	width:60px;
+	border:3px solid red;
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - 30px);
+}
+.section img {
+	margin-bottom: 10px;
+}
+
+.section h4 {
+	margin-bottom: 20px;
+}
+.nav-orange {
+	background-color: blue;
+}
+.navlink {
+	border-bottom: 1px solid #1615f2;
+	transition: .35s;
+}
+.navlink.active {
+	border-bottom: 1px solid #fff;
+}
+.navlink:hover {
+	border-bottom: 1px solid #fff;
+}
+
+.hero img{
+	width: 100%;
+}
+
+.title {
+	font-family: 'mulisemibold';
+	font-size: 20px;
+	padding-bottom: 7.5px;
+	border-bottom: 5px solid #ddd
+}
+.col-4 {
+	min-height: 200px;
+	width: 25%;
+	float: left;
+	padding:10px;
+}
+.btn {
+	border:1px solid #ddd;
+	padding:10px 16px;
+	font-size: 16px;
+}
+
+.btn:hover {
+	cursor: pointer;
+}
+
+.btn-blue {
+	background-color: #2E8BC0;
+	color: #fff;
+	border:1px solid #2E8BC0;
+}
+
+.btn-blue:hover {
+	background-color: #145DA0;
+}
+span.tgl {
+	font-size: 12px;
+	font-family: 'mulilight';
+	color: #888;
+	display: block;
+}
+span.judul a {
+	text-decoration: none;
+	font-size: 16px;
+	font-family: 'mulisemibold';
+	color: #1615f2;
+	display: inline-block;
+	transition: .35s;
+}
+
+span.judul a:hover {
+	background-color: #1615f2;
+	color: blue;
+}
+
+.footer {
+	background-color: #1615f2;
+	padding: 15px 15px 15px 30px;
+	text-align: center;
+}
+.thumbnail-box {
+	border:1px solid #ccc;
+	width: 100%;
+	min-height: 200px;
+	background-color: #fff;
+}
+
+.thumbail-img {
+	height: 150px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.thumbnail-text {
+	height: 50px;
+	padding:5px;
+}
+.thumbnail-link {
+	color: #333;
+}
+
+.thumbnail-link:hover {
+	color: red;
+}
+
+.sosmed_inline img{
+    display:inline;
+    margin:2px;
+    border-radius:4px;
+    width:44px;
+    opacity:1;
+    cursor:pointer;
+}
+
+.sosmed_inline img:hover{
+    opacity:0.8;
+    transform:scale(1.1);
+}
+
+.mobile-menu-btn {
+	width:100%;
+	float: left;
+	padding:10px;
+	display: none;
+}
+
+.box-menu-mobile {
+	display: none;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0, .9);
+	z-index: 9999;
+}
+
+.box-menu-mobile span {
+	color: #fff;
+	padding:10px;
+	position: absolute;
+	right: 0;
+}
+
+.box-menu-mobile ul {
+	margin-top: 50px;
+}
+
+.box-menu-mobile ul li a {
+	padding:10px;
+	display: inline-block;
+	color: #fff;
+}
+/*css mobile*/
+
+@media screen and (max-width: 768px){
+
+	.container {
+		width:100%;
+	}
+
+	.col-4 {
+		width:50%;
+	}
+
+	.thumbnail-text {
+		font-size: 14px;
+	}
+
+	.header-logo {
+		line-height: 50px;
+		padding-left: 10px;
+	}
+
+	.header-logo img {
+		width: 50px;
+	}
+
+	.header-logo h2 {
+		font-size:20px;
+	}
+
+	.header-menu {
+		display: none;
+	}
+
+	.box-gmaps {
+		width: 100%;
+	}
+
+	.mobile-menu-btn {
+		display: block;
+	}
+
+}
